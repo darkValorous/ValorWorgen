@@ -1,0 +1,6 @@
+## Interface: 80000
+## Title: ValorWorgen
+## Notes: Reclaim your humanity!
+## Author: darkValorous
+## Version: 1.0
+ValorWorgen.lua
