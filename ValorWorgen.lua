@@ -3,7 +3,7 @@
 -- Global: ValorAddons[] ValorWorgenForm
 -------------------------------------------------
 local _G = _G
-local addonName, _ = ...
+local addonName = ...
 if not select(2, _G.UnitRace("player")) == "Worgen" then return end
 if not _G.ValorAddons then _G.ValorAddons = {} end
 _G.ValorAddons[addonName] = true
