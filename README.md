@@ -8,5 +8,5 @@ Features
  - In any situation where Two Forms is usable, pressing your "Toggle Sheath" (default Z) key will return you to human.
 
 Macros/Addons
- - Can be called from a macro using: /click ValorWorgenButton
+ - Can be called from a macro using: /click ValorWorgenButton LeftButton 1
  - Sets "ValorWorgenForm" as a boolean global.

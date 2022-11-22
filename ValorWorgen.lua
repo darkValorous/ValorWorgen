@@ -12,7 +12,7 @@ _G.ValorWorgenForm = false
 -- Local Variables
 -------------------------------------------------
 local playerModel = _G.CreateFrame("PlayerModel")
-local macroCond = "[nocombat,nomounted,novehicleui,noform]"
+local macroCond = "[nocombat,nomounted,novehicleui]"
 local macroText = "/cast "..macroCond.." ".._G.GetSpellInfo(68996).."\n/run ClearOverrideBindings(ValorWorgenButton)"
 local modelId = { [307454] = "w", [307453] = "w", }		-- Male/Female Worgen
 local GetBindingKey, ClearOverrideBindings, SetOverrideBindingClick, InCombatLockdown, SecureCmdOptionParse
@@ -35,7 +35,7 @@ vwButton:RegisterEvent("UNIT_MODEL_CHANGED")
 vwButton:RegisterEvent("UNIT_AURA")
 vwButton:RegisterEvent("PLAYER_REGEN_ENABLED")
 vwButton:RegisterEvent("PLAYER_ENTERING_WORLD")
-vwButton:RegisterForClicks("AnyDown")
+vwButton:RegisterForClicks("LeftButtonDown", "LeftButtonUp")
 vwButton:SetScript("OnEvent",
 	function(self, event, ...)
 		-- Model Trigger: Determine Current Form
